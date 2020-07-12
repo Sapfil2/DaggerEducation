@@ -1,19 +1,7 @@
 package programmer.staff;
 
-public class SmartPhone {
+public interface SmartPhone {
 
-    private boolean isCharged;
+    void callColleague();
 
-    public SmartPhone(boolean isCharged) {
-        this.isCharged = isCharged;
-    }
-
-    public SmartPhone() {
-    }
-
-    public void callColleague(){
-        if(!isCharged) {
-            throw new IllegalStateException("Phone is not charged!");
-        }
-    }
 }
